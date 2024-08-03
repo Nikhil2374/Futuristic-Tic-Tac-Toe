@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #121212;
+    color: #ffffff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    color: #00e676;
+    text-shadow: 0 0 10px #00e676;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.game {
+    display: grid;
+    grid-template-columns: repeat(3, 18vmin);
+    grid-template-rows: repeat(3, 18vmin);
+    gap: 1.5vmin;
+}
+
+.box {
+    background: linear-gradient(145deg, #1f1f1f, #2a2a2a);
+    border-radius: 10px;
+    border: none;
+    font-size: 8vmin;
+    color: #00e676;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.box:active {
+    transform: scale(0.95);
+    box-shadow: 0 0 10px #00e676;
+}
+
+#reset, #new-btn {
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    font-size: 1.25rem;
+    background-color: #00e676;
+    color: #121212;
+    border: none;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#reset:hover, #new-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px #00e676;
+}
+
+#msg {
+    font-size: 2rem;
+    color: #00e676;
+    margin-bottom: 1rem;
+}
+
+.msg-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #1c1c1c;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #00e676;
+}
+
+.hide {
+    display: none;
+}
